@@ -25,3 +25,26 @@ document.body.innerHTML = `<h1>Tvůj nově vytvořený email je: </h1>
 4. Znova vezmu uloženou proměnnou a nechám metodu zmenšit všechna písmena.
 5. Výsledek nechám vypsat do stránky, a to pomocí interpolace řetězců. 
 */
+
+// Postup 01 podle rady od koučky Naty:
+
+/* let firstName = prompt("Zadej své křestní jméno bez diakritiky:")
+let lastName = prompt("Zadej své příjmení bez diakritiky: ")
+const email = "@fit.cvut.cz"
+
+let first = firstName.trim().slice(0, 3).toLowerCase()
+let last = lastName.trim().slice(0, 5).toLowerCase()
+
+
+document.body.innerHTML = `<h1>Tvůj nově vytvořený email je: </h1> 
+<p>${last}${first}${email}</p>` */
+
+
+// Postup 02 podle rady od koučky Naty:
+
+/* let firstName = prompt("Zadej své křestní jméno bez diakritiky:").trim().slice(0, 3).toLowerCase()
+let lastName = prompt("Zadej své příjmení bez diakritiky: ").trim().slice(0, 5).toLowerCase()
+const email = "@fit.cvut.cz"
+
+document.body.innerHTML = `<h1>Tvůj nově vytvořený email je: </h1> 
+<p>${firstName}${lastName}${email}</p>` */
